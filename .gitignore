@@ -1,3 +1,5 @@
 room_env/
 __pycache__/
 *.sqlite3
+*.json
+*.svg
