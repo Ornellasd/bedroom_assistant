@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # 3rd party apps
+    'bootstrap4',
+
     # My apps
-    'climate'
+    'climate',
 
 ]
 
@@ -122,3 +125,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Bootstrap4 Settings
+BOOTSTRAP4 = {
+    'include_jquery': True,    
+}

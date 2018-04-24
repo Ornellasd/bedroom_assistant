@@ -45,8 +45,7 @@ while True:
         client.subscribe('temp_humidity')
         
     def on_message(client, userdata, msg):
-        # refactor this bitch
-
+    
         fahrenheit, h = [float(x) for x in msg.payload.decode("utf-8").split(',')]
         
         temp_list.append(fahrenheit)
@@ -64,7 +63,7 @@ while True:
         chart.render_to_file('static/climate/chart.svg')    
         write_files()
             
-        #sleep(300)
+        sleep(300)
         #sleep(5)
           
     client = mqtt.Client()
