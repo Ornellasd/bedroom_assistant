@@ -63,7 +63,7 @@ while True:
         chart.render_to_file('static/climate/chart.svg')    
         write_files()
             
-        sleep(300)
+        sleep(1800)
         #sleep(5)
           
     client = mqtt.Client()
