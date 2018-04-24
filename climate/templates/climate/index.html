@@ -2,5 +2,17 @@
 {% load staticfiles %}
 
 {% block content %}
+
+<div class="container">
+
+	<div id="weather">
+		<h1>{{ outside_temp }}</h1>
+		<h5>{{ status }}
+		<img src="{{ icon_url }}" />
+	</div>
+
 	<img src="{% static 'climate/chart.svg' %}" />
+	
+</div>
+
 {% endblock content %}
