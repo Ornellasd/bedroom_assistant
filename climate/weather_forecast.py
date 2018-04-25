@@ -1,7 +1,7 @@
 import pyowm
 
 
-owm = pyowm.OWM('96bae3ab3550d3c6c1bde626c2a458e4')
+owm = pyowm.OWM('API-KEY')
 city_id = 5746545
 
 def get_forecast():
