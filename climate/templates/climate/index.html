@@ -12,6 +12,10 @@
 	</div>
 
 	<img src="{% static 'climate/chart.svg' %}" />
+	<h6>Desk Light:</h6>
+	<p>{{ wemo_state }}</p>
+	<a href="{% url 'climate:desk_on' %}">on</a>
+	<a href="{% url 'climate:desk_off' %}">off</a>
 	
 </div>
 
