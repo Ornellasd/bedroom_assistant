@@ -9,8 +9,8 @@ import pygal
 
 while True:
     
-    temp_file = 'temps.json'
-    humidity_file = 'humidity.json'
+    temp_file = 'chart_json/temps.json'
+    humidity_file = 'chart_json/humidity.json'
     
     def write_temp():
         with open(temp_file, 'w') as f:
@@ -60,7 +60,7 @@ while True:
         #chart.x_labels = time_list
         chart.add('Temps in °F', temp_list)
         chart.add('Humidity in %', humidity_list)
-        chart.render_to_file('static/climate/chart.svg')    
+        chart.render_to_file('../static/climate/chart.svg')    
         write_files()
             
         sleep(1800)

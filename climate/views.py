@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 
-from . import weather_forecast, wemo
-from .weather_forecast import *
-from .wemo import *
+from .scripts import weather_forecast, wemo
+from .scripts.weather_forecast import *
+from .scripts.wemo import *
 
 
 def index(request):
